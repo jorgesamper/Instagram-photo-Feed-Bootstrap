@@ -75,79 +75,61 @@
             </div>
         </div>
     </div>
-    <!--iconos navegacion-->
-    
+
+<!--iconos navegacion, cada uno de los botones esta referencia a un .html-->
     <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-th"></i></a></li>
-            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-stop"></i></a></li>
+        <ul class="pagination justify-content-center" style="margin-top:16px">
+            <li class="page-item"><a class="page-link" href="index.html" style="color:#0D6EFD;"><i class="fas fa-th"></i></a></li>
+            <li class="page-item"><a class="page-link" href="index2.html" style="color:#b2b2b2;"><i class="fas fa-stop"></i></a></li>
         </ul>
         </div>
     </nav>
 
-    <!--grilla de fotos-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-2 ">
-                <img src="https://picsum.photos/600/500?random=1" class="img-fluid">
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-2 ">
-                <img src="https://picsum.photos/600/500?random=2" class="img-fluid">
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-2 ">
-                <img src="https://picsum.photos/600/500?random=9" class="img-fluid">
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-0 ">
-                <img src="https://picsum.photos/600/500?random=4" class="img-fluid">
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-2 ">
-                <img src="https://picsum.photos/600/500?random=5" class="img-fluid">
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-2 ">
-                <img src="https://picsum.photos/600/500?random=6" class="img-fluid">
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-2 ">
-                <img src="https://picsum.photos/600/500?random=7" class="img-fluid">
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-2 ">
-                <img src="https://picsum.photos/600/500?random=8" class="img-fluid">
-            </div>
-            <div class="col-lg-4 col-sm-6 m-0 ">
-                <img src="https://picsum.photos/600/500?random=9" class="img-fluid">
-            </div>
-        </div>
-    </div>
-    
-    <!--modal-->
-    <div class="modal fade" id="newPost" tabindex="-1" aria-labelledby="newPostLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <nav aria-label="Attach elements">
-                            <ul class="pagination justify-content-start">
-                                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-camera"></i></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#"><i
-                                            class="fas fa-map-marker-alt"></i></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-success">Publish</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<!-- Aquí va un contenedor con el tablero de imagenes aleatorias -->
+    <div class="container">
+      <!-- Primer fila de imagenes  -->
+      <div class="row">
+          <div class="col-md-4">
+              <img src="https://picsum.photos/600/500?random=1" class="img-fluid mb-3" alt="10rem" style="margin: auto;">
+          </div>
+          <div class="col-md-4">
+              <img src="https://picsum.photos/600/500?random=2" class="img-fluid mb-3" alt="10rem" style="margin: auto;">
+          </div>
+          <div class="col-md-4">
+              <img src="https://picsum.photos/600/500?random=3" class="img-fluid mb-3" alt="10rem" style="margin: auto;">
+          </div>
+      </div>
+      <!-- Segunda fila de imagenes  -->
+      <div class="row">
+          <div class="col-md-4">
+              <img src="https://picsum.photos/600/500?random=4" class="img-fluid mb-3" alt="10rem" style="margin: auto;">
+          </div>
+          <div class="col-4">
+              <img src="https://picsum.photos/600/500?random=5" class="img-fluid mb-3" alt="10rem" style="margin: auto;">
+          </div>
+          <div class="col-md-4">
+              <img src="https://picsum.photos/600/500?random=6" class="img-fluid mb-3" alt="10rem" style="margin: auto;">
+          </div>     
+          </div>
+      <!-- tercer fila de imagenes -->
+      <div class="row">
+          <div class="col-md-4">
+              <img src="https://picsum.photos/600/500?random=7" class="img-fluid mb-3" alt="10rem" style="margin: auto;">
+          </div>
+          <div class="col-md-4">
+              <img src="https://picsum.photos/600/500?random=8" class="img-fluid mb-3" alt="10rem" style="margin: auto;">
+          </div>
+          <div class="col-md-4">
+              <img src="https://picsum.photos/600/500?random=9" class="img-fluid mb-3" alt="10rem" style="margin: auto;">
+          </div>     
+          </div>
+      </div>
+  </div>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-</body>
 
 </html>
